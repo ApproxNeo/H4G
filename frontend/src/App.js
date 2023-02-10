@@ -9,10 +9,10 @@ function App() {
   return (
     <div>
         <NavBar/>
-          <Routes>
-            <Route path="/" element={<AboutMeScreen/>}/>
-            <Route path="/projects" element={<ProjectScreen/>}/>
-          </Routes>
+        <Routes>
+          <Route path="/" element={<AboutMeScreen/>}/>
+          <Route path="/projects" element={<ProjectScreen/>}/>
+        </Routes>
         <Footer/>
     </div>
   );

@@ -5,12 +5,12 @@ import "../styles/AboutMeScreen.css"
 export default function AboutMeScreen() {
     return (
         <div>          
-            <Section style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <Section style={{ textAlign: 'center' }}>
               <h1>UNICORNS FOR GOOD ALLIANCE</h1>
               <p>A platform uniting the world's best leaders, technologists, and changemakers to create transformative impact through technology</p>
             </Section>
     
-            <Section style={{ flexDirection: 'column', alignItems: 'center', backgroundColor: '#e5e7eb' }}>
+            <Section style={{ alignItems: 'center', backgroundColor: '#e5e7eb' }}>
                 <div className="information-header">Some random information</div>
                 <div className="cards">
                     <div className="card">
