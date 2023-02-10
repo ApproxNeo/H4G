@@ -1,15 +1,14 @@
 import React from "react";
 import "../styles/NavBar.css"
+import { NavLink as Link} from "react-router-dom";
 
 export default function NavBar() {
   return (
     <header>
-        <div class="logo">UNICORN FOR GOOD</div>
-        <div class="links">
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Spotlight</a>
-            <a href="#">Our Partners</a>
+        <div className="logo">UNICORN FOR GOOD</div>
+        <div className="links">
+            <Link to="/">About Us</Link>
+            <Link to="/projects">Projects</Link>      
         </div>
     </header>
   );
