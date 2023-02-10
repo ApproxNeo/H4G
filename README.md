@@ -27,13 +27,13 @@ It will showcase
 - Latest social problem
 
 ***
-## Mattermost 
+## Mattermost Server
 
-A Discord-like, self-hostable platform for chatting and collaboration. Many integrations are available to configure it to fit any use-case
+A Discord-like, self-hostable platform for chatting and collaboration. Many integrations are available to configure it to fit any use-case. It consist of:
 
-- One main Team to find out about SIP projects, and any FAQs
-- One other Team to submit project ideas, side-by-side with a Playbook feature that will inform users of the requirements
-- If a user's submission is accepted, they get their own Team to host their project, and invite other collaborators
+- One main Team to find out about current projects, problem statements, and to learn more about SIP
+- One other Team to submit project ideas/proposals, side-by-side with a Playbook feature that will inform users of the requirements
+- If a user's submission is accepted, they get their own Team channel to host their project, and 
 
 ### Benefits over similar platforms like Discord
 - All servers are collected at one point and can be freely viewed & joined to learn more about the project
