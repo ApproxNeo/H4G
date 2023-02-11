@@ -25,21 +25,38 @@ transition: slide-left
 css: unocss
 ---
 
-# Welcome to Slidev
+# Hephaestus
 
-Presentation slides for developers
+A collaboration platform for tech4good developers
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+
+
+<div class="text-sm">
+
+> *In a modern world, **developers** are akin to the **carpenters, blacksmiths and workers**   
+> of older times; developing and building to improve everyday life*
+> 
+> *Hence, we've named our project after *Hephaestus*, the Greek God of craftsmen*  
+> "  
+> Christopher Tan, Clement Neo
 </div>
 
+<br>
+
+<div class="text-left">
+
+
+
+</div>
+
+
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <b>Links!</b>
+  <a href="https://hephaestus.approxneo.me" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon:view />
+  </a>
+  <a href="https://github.com/approxneo/h4g" target="_blank" alt="GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -52,358 +69,162 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 transition: fade-out
 ---
+# Chosen Problem Statement
+> Develop and design a global tech-for-good innovation & collaboration platform, to enhance tech-for-good information sharing / transparency, learning, exchange and accelerate collaboration among tech for good ecosystem players
 
-# What is Slidev?
+<br/>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+# Pain Point
+> In the current setup, there is a disconnect **between fellow Developers**, and **between the Developers and Organisations**
+> - Between fellow Developers, there is no platform to discuss ideas and to share freely on what they have ideated
+> - Between Developers and Organisations, Developers simply pose ideas which are either accepted or rejected by Organisaions
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+<br/>
 
 ---
-transition: slide-up
+transition: fade-out
 ---
+# Our Solution
+> Provide a platform where users can freely chat, voice call and share ideas all the while trying to solve complex world problems together
 
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+We propose a platform for people to
+- Learn about social issues to work on and innovative solutions
+- Propose innovative ideas or find like-minded teammates with the technical competencies
+- Have their ideas follow a stringent minimum requirement or learn how to start a project
+- Projects with potential are promoted and can be mentored
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+transition: fade-out
 ---
+# Impact
 
-# Code
+### Novelty
 
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+- 🚅 Speed of collaboration - devs can hop onto the platform to learn more about the trending social projects
+- 🤼 devs can find like minded teammates with the required technical competency or expertise
+- 🧫 Culture of innovation - devs can bring and share radically different ideas
 
 <br>
 
-Inline $\sqrt{3x-1}+(1+x)^2$
+### Automation
+- Streamline the project proposal submission process
+- Allow for pledging, event submission, and act as a T4G directory
+- Give approved projects a 'home page' as well as a platform to start a community and attract others to contribute
 
-Block
-$$
-\begin{array}{c}
+---
+transition: fade-out
+layout: two-cols
+---
+# Main Components
 
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+### Landing Page
 
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+- About us information
+- Trending approved projects
+- Latest social problem
 
-\nabla \cdot \vec{\mathbf{B}} & = 0
+<img src="frontend.png" class="rounded  border-gray-500 absolute right-5 top-20 h-30">
 
-\end{array}
-$$
+<br/>
+
+### Admin Page
+- admin-only web dashboard
+- Lists all project proposals submitted
+- Allows for managing of problem statements
+
+<img src="admin.png" class="rounded  border-gray-500 absolute right-5 bottom-10">
+
+
+
+::right::
 
 <br>
 
-[Learn more](https://sli.dev/guide/syntax#latex)
+### Mattermost Server
 
----
+<div class="text-sm">
 
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
+- A Discord-like, self-hostable platform for chatting and collaboration
+- has heavy integration support to create bots and commands that aid in supporting such a community
+- can host multiple "Teams", each Team being a small group of channels where individuals may chat, voice call, and share freely
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+<img src="mm_welcome.png" class="rounded  border-gray-500 absolute bottom-0">
+
+
 
 ---
-src: ./pages/multiple-entries.md
-hide: false
+transition: fade-out
 ---
+# Demo
+
+1. Users can visit the landing page to get to Mattermost
+2. Once they create an account, they are given a welcome message  
+ to describe the server, and its capabilities
+3. From here, users may:
+  - Read the rules
+  - Find out more about SIP
+  - Read the available problem statements
+  - Read the existing solutions being  
+    developed
+
+<img src="login.png" class="rounded  border-gray-500 absolute top-5 right-0 w-100">
+<img src="welcome.png" class="rounded  border-gray-500 absolute top-50 right-0 w-140">
 
 ---
-layout: center
-class: text-center
+transition: fade-out
+---
+# Demo - Using Mattermost 
+1. Mattermost can be used to chat, send files and voice call
+2. It has in-depth formatting, allowing for in-channel sharing of code, LaTeX formulae etc
+
+<img src="usage.png" class="rounded  border-gray-500 absolute top-50 right-0 w-140">
+
+---
+transition: fade-out
+---
+# Demo - View Projects
+1. In the `solutions` channel, users can view the existing projects, adding a "like" to them if wanted
+2. To learn more, users can click into the project to be invited into the Project's Team
+
+<br><br><br><br><br><br><br><br><br>
+
+> Each icon is a Team, with one main Team,  
+> and the resting being Teams hosting the   
+> various other approved projects
+
+<img src="demo1.png" class="rounded  border-gray-500 absolute top-50 right-0 w-160">
+
+<img src="demo2.png" class="rounded  border-gray-500 absolute top-50 left-20 w-50">
+
+
+---
+transition: fade-out
+---
+# Demo - Submit Proposals
+1. By heading to the Submissions Team, users can start a "Playbook" to initiate the submission process
+2. A channel will be created for them, with a Playbook on the side. This contains a checklist of what to prepare
+3. Once prepared, users can use the `/submit` command to fill in a form for their proposal, on Mattermost itself
+
+<br><br><br><br><br><br><br><br><br>
+
+4. This submission is then show on the admin dashboard, to be evaluated. Admins may also chat with the user on Mattermost to get a better idea of their submission
+
+<img src="playbk.png" class="rounded  border-gray-500 absolute top-50 left-10 h-60">
+<img src="check.png" class="rounded  border-gray-500 absolute top-50 right-70 h-68">
+<img src="submit.png" class="rounded  border-gray-500 absolute top-50 right-10 h-68">
+
+---
+transition: fade-out
 ---
 
-# Learn More
+# How we built it
+- Frontend with React, HTML and CSS
+- Backend with Flask and Firebase
+- Collaboration platform with Mattermost
+- Hosted on DigitalOceans
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+---
+layout: cover
+---
+# End
