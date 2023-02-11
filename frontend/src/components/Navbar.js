@@ -8,7 +8,8 @@ export default function NavBar() {
         <div className="logo">UNICORN FOR GOOD</div>
         <div className="links">
             <Link to="/">About Us</Link>
-            <Link to="/projects">Projects</Link>      
+            <Link to="/problems">Problems</Link>      
+            <Link to="/projects">Projects</Link>  
         </div>
     </header>
   );

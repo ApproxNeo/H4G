@@ -1,26 +1,34 @@
 import React from "react";
-import ProjectRow from "../components/ProjectRow";
-import Section from "../components/Section";
-import "../styles/ProjectScreen.css"
+import ItemRow from "../components/ItemRow";
 
 export default function ProjectScreen() {
     const dummy = [
         {
-            "theme": "Accessibility (general)",
-            "desc": "Problem Statement\n How might we, as a community empower, equip and co-create with persons with disabilities to enable them to access, use, and enjoy places, services, products and/or information, whether physical or virtual, so that persons with disabilities can connect to and be included in the wider community?",
+            "theme": "bloom",
+            "desc": "bloom belives that every woman deserves a role of growth",
+            "imgLink": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/871/512/datas/medium.jpg",
         },
         {
-            "theme": "Accessibility - Transport",
-            "desc": "Problem Statement\n How might we, as a community empower, equip and co-create with persons with disabilities to enable them to access, use, and enjoy places, services, products and/or information, whether physical or virtual, so that persons with disabilities can connect to and be included in the wider community?",
+            "theme": "Habitat Heroes",
+            "desc": "Build homes, communities and hope through a virtual house-building",
+            "imgLink": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/871/372/datas/medium.png",
         },
         {
-            "theme": "Accessibility - Healthcare",
-            "desc": "Problem Statement\n How might we, as a community empower, equip and co-create with persons with disabilities to enable them to access, use, and enjoy places, services, products and/or information, whether physical or virtual, so that persons with disabilities can connect to and be included in the wider community?",
+            "theme": "Seek&Send",
+            "desc": "Utilising technology in bringing Social Enterprises closer together so they may forge a community to exchange knowledge and skills with one another.",
+            "imgLink": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/869/206/datas/medium.png",
         },
     ]
     return (
-        <div className="container">           
-            {dummy.map((item, index) => <ProjectRow key={index} item={item}/>)}
+        <div style={{
+            flex: 1,
+            display: "flex",
+            padding:"48px calc((100% - 800px)/2)",
+            flexWrap: 'wrap',
+            gap: "30px",
+            justifyContent: "center"
+        }}>           
+            {dummy.map((item, index) => <ItemRow key={index} item={item}/>)}
         </div>
       );
 }
