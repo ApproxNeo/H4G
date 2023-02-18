@@ -4,6 +4,7 @@ import AboutMeScreen from './screens/AboutMeScreen';
 import ProblemScreen from './screens/ProblemScreen';
 import ProjectScreen from './screens/ProjectScreen';
 import { Routes, Route } from 'react-router-dom';
+import HowToUse from './screens/HowToUse';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
               <Route path="/" element={<AboutMeScreen/>}/>
               <Route path="/problems" element={<ProblemScreen/>}/>
               <Route path="/projects" element={<ProjectScreen/>}/>
+              <Route path="/howtouse" element={<HowToUse/>}/>
             </Routes>
           </div>
         <Footer/>
