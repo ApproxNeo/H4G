@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/ProjectRow.css"
 
 export default function ProjectRow({ item }) {
   return (
